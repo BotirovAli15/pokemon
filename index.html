@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon List</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Подключение библиотеки Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1>Pokemon List</h1>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search Pokemon by name">
+        <button id="searchButton">Search</button>
+    </div>
+    <ul class="list"></ul>
+    <button id="favoritesButton" class="favorites-button">
+        <img src="https://pokemonsfull.netlify.app/images/favorite.svg" alt="My Favorites" class="favorites-icon">
+    </button>
+    <div id="favoritesMenu" class="favorites-menu">
+        <h2>Favorite Pokemon</h2>
+        <ul class="favorites-list"></ul>
+        <button id="clearFavoritesButton" class="clear-button">
+            <i class="fas fa-eraser"></i> Clear All
+        </button>
+        <button id="closeFavoritesButton" class="close-button">✖</button>
+    </div>
+    <!-- Подключение скриптов -->
+    <script src="main.js"></script>
+    <script src="pokemons.js"></script>
+</body>
+</html>
